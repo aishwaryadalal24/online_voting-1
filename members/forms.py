@@ -6,7 +6,7 @@ from django.core.validators import RegexValidator
 
 class SignUpForm(UserCreationForm):
 
-    aadhar_no = forms.CharField(max_length=12, validators=[RegexValidator(r'^\d{1,10}$')], required=True, help_text='')
+    #aadhar_no = forms.CharField(max_length=12, validators=[RegexValidator(r'^\d{1,10}$')], required=True, help_text='')
     email = forms.EmailField(max_length=254, help_text='Enter a valid email address',required=True)
     
     # following condition added for unique email address.
@@ -31,7 +31,6 @@ class SignUpForm(UserCreationForm):
         model = User
         fields = [
             'username',
-            'aadhar_no',
             'first_name',
             'last_name',
             'email', 
