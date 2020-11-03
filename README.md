@@ -11,3 +11,4 @@ online voting system with django with data security using homomorphic encryption
     i) python manage.py makemigrations
     ii) python manage.py migrate
 6) Run the Application = python manage.py runserver
+7)On the day of result edit the views.py files in members folder , erase the "not announced" string and write the strings in commented section so that viewrs can view result of voting.
