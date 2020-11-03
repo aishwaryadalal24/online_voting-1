@@ -9,6 +9,6 @@ from .models import Poll
 admin.site.register(Poll)
 
 poll=Poll()
-print("result")
+#print("result")
 
-print(poll.total())
+#print(poll.total())
