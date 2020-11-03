@@ -113,9 +113,9 @@ def result(request):
     no = poll.total()    # taking the result from server
     s_no = str(no)       
 
-    bjp = s_no[-7::1]          # spliting of sum string
-    cong = s_no[-14:-7:1]
-    other = s_no[-15::-1]
+    bjp = "not announced"  #s_no[-7::1]          # spliting of sum string
+    cong =  "not announced"  #s_no[-14:-7:1]
+    other =  "not announced"  #s_no[-15::-1]
 
     context = {
         "bjp":bjp,"cong":cong,"other":other,
